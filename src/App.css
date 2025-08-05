@@ -1,0 +1,15 @@
+/* App.css additions */
+body {
+  position: relative;
+}
+
+/* Ensure loader appears above all content */
+.loader-container {
+  z-index: 9999;
+}
+
+/* Prevent scrolling when loader is active */
+body.loader-active {
+  overflow: hidden;
+  height: 100vh;
+}

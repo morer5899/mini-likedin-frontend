@@ -1,0 +1,71 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
+}
+
+.loader-cube {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(25deg) rotateY(45deg);
+}
+
+.cube-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.cube-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.front {
+  transform: translateZ(40px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(40px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(40px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(40px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(40px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(40px);
+}
+
+.loader-text {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4f46e5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
