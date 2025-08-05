@@ -235,9 +235,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Post categories/tags
 - [ ] Social sharing features
 
-## 📞 Support
-
-For support, email support@socialmediaapp.com or create an issue in the repository.
 
 ## 🙏 Acknowledgments
 
