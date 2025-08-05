@@ -27,7 +27,7 @@ const ProtectedRoute = ({ children }) => {
     return possibleSession ? <Loader /> : <Navigate to="/login" replace />;
   }
   
-  return user ? children : <Navigate to="/login" replace />;
+  return user ? children : <Navigate to="/" replace />;
 };
 
 const PublicRoute = ({ children }) => {
